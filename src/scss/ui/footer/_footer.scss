@@ -1,0 +1,39 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.footer{
+    margin-top: 5rem;
+    background-color: v.$negro;
+    padding: 5rem 0;
+    
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        @include m.tablet { 
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+    }
+
+    &__enlace,
+    &__copyright{
+        color: v.$blanco;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-right: 2rem;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            color: v.$primario;
+        }
+        @include m.tablet { 
+            font-size: 3rem;
+        }
+        
+    }
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarra Base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header ">
+        <div class="header__contenedor">
+            <div class="header__barra">
+                <a href="#" class="hedaer__imagen">
+                    <img src="src/img/logo.svg" alt="logo" class="header__logo">
+                </a>
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace">Inicio</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="blog.html" class="navegacion__enlace">Blog</a>
+                    <a href="tienda.html" class="navegacion__enlace">Tienda</a>
+                </nav>
+            </div><!--.header__barra-->
+        </div><!--.header__contenedor-->
+    </header>
+
+    <div class="producto producto--individual contenedor">
+        <img src="src/img/guitarra_01.jpg" alt="Imagen Producto" class="producto__imagen producto__imagen--individual">
+        <div class="producto__contenido producto__contenido--individual">
+            <h3 class="producto__nombre">Lukather</h3>
+            <p class="producto__descripcion producto__descripcion--individual">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, quos similique, odio ex commodi beatae, alias recusandae excepturi.</p>
+            <p class="producto__precio">$300</p>
+            <form action="" class="producto__formulario">
+                <label for="" class="producto__label">Cantidad: </label>
+                <select name="" id="" class="producto__cantidad">
+                    <option value="">---Seleccione---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input type="submit" class="producto__agregar-carrito" value="Agregar al carrito">
+            </form>
+        </div>
+    </div><!--.producto-->
+   
+    <footer class="footer">
+        <div class="footer__grid footer__contenedor">
+            <nav class="footer__nave">
+                <a href="index.html" class="footer__enlace">Inicio</a>
+                <a href="nosotros.html" class="footer__enlace">Nosotros</a>
+                <a href="blog.html" class="footer__enlace">Blog</a>
+                <a href="tieda.html" class="footer__enlace">Tienda</a>
+            </nav>
+            <p class="footer__copyright">Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

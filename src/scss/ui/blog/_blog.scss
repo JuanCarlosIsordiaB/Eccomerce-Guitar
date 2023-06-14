@@ -1,0 +1,65 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.blog{
+
+    &__heading{
+        @include m.heading;
+    }
+
+    &__grid{
+        gap: 4rem;
+        @include m.grid(2, 1fr);
+
+        @include m.tablet { 
+            @include m.grid(4, 1rem);
+        }
+    }
+}
+
+.entrada{
+    &--completa{
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+    &__contenido{
+        padding: 2rem;
+    }
+    &__titulo{
+        font-weight: 400;
+        font-size: 2.8rem;
+        margin: 0;
+        line-height: 1.2;
+        &--completa{
+            font-size: 5rem;
+        }
+
+    }
+    &__fecha{
+        font-size: 1.6rem;
+        color: v.$primario;
+    }
+    &__enlace{
+        @include m.boton;
+        color: v.$negro;
+        padding: 0.75rem 0.5rem;
+        display: block;
+        text-align: center;
+       
+    }
+    &__texto{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+
+        &--completa{
+            margin: 1rem 0;
+        }
+    }
+    
+
+}
